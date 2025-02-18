@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask
 import os
 import subprocess
@@ -9,8 +8,8 @@ app = Flask(__name__)
 
 @app.route('/htop')
 def htop():
-    name = "Your Full Name"
-    username = os.getenv("USER")
+    name = "Abhishek Pokale"
+    username = "abhi132004"
     ist = datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S')
     top_output = subprocess.getoutput('top -b -n 1')
 
